@@ -1,0 +1,241 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+marquee
+{
+    background-color: aliceblue;
+}
+.container-header-list-vertical
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100vh;
+    display: none;
+}
+.container-header-list-vertical-active
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100vh;
+    z-index: 1;
+}
+.header-list-vertical
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    background-color:white
+}
+.header-list-vertical .header-list-vertical-word
+{
+    padding: 20px;
+}
+.header-list-vertical .header-list-vertical-x-icon
+{
+    text-align: end;
+    font-size: 25px;
+}
+.header-list-vertical .header-list-vertical-x-icon i
+{
+    cursor: pointer;
+}
+.container
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+.part1
+{
+    width: 45%;
+}
+.part1 ul
+{
+    display: flex;
+}
+.part1 ul li
+{
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+.part1 ul li a
+{
+ 
+    position: relative;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.part1 ul li::before
+{
+    
+    position: absolute;
+    content:'';
+    opacity: 0;
+    transition: all .5s ease;
+    background-color: black;
+    width: 0px;
+    height: 2.5px;
+    translate:0px 20px;
+}
+.part1 ul li:hover::before
+{
+    
+    position: absolute;
+    content:'';
+    opacity: 1;
+    background-color: black;
+    width: 50px;
+    height: 2.5px;
+    translate: 0px 20px;
+}
+.part2
+{
+    display: flex;
+    height:35px;
+    width: 10%;
+    justify-content: center;
+}
+.part2 img
+{
+    width:75px;
+
+}
+.part3 
+{
+    width: 45%; 
+    display: flex;
+    justify-content: end;
+
+}
+.part3 ul li
+{
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 10px;
+    height: 20px;
+    text-align: center;
+    transition: all .5s ease;
+    overflow: hidden;
+
+}
+.part3 ul li:hover
+{
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 10px;
+    height: 50px;
+}
+.part3 ul li div
+{
+    font-size: 15px;
+}
+
+#header-icon
+{
+    font-size: 30px;
+    color: black;
+    padding-bottom: 10px;
+}
+.header-list
+{
+    display: none;
+    align-items: center;
+}
+.shop-options
+{
+    display: none;
+}
+.shop-options-active
+{
+    padding: 40px;
+    display: flex;
+    justify-content:space-between;
+    height: 200px;
+    background-color:aliceblue;
+    transition: all ease 10s;
+
+}
+.shop-options-active ul
+{
+    padding: 20px;
+    width: 200px;
+}
+.shop-options-active ul h4
+{
+    padding-bottom: 20px;
+}
+.shop-options-active ul a
+{
+    font-size: 12px;
+    text-decoration: none;
+}
+.shop-options-active ul li
+{
+    color: gray;
+    padding-bottom: 10px;
+    list-style: none;
+}
+.content-options
+{
+    display: none;
+    
+}
+.content-options-active
+{
+    
+    height: 200px;
+    background-color:aliceblue;
+}
+
+@media (max-width: 1000px)
+{
+.container
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.part1
+{
+    width: 20%;
+}
+.part1 ul li
+{
+    display: none;
+}
+.header-list
+{
+    display:flex;
+}
+.part2
+{
+    width: 60%;
+}
+.part3
+{
+    width: 20%;
+}
+.part3 .bx-search
+{
+    display: none;
+}
+.part3 .search-icon
+{
+    display: none;
+}
+
+}
